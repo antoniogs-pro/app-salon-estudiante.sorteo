@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Generar Numeros Aleatorios dentro de un Rango</title>
+    <script type="text/javascript">
+	function aleatorio() {
+		var min = parseInt(document.getElementById('min').value);
+		var max = parseInt(document.getElementById('max').value);
+		var res = Math.floor(Math.random() * (max - min + 1)) + min;
+		document.getElementById('resultado').innerHTML = res.toString();
+	}
+	</script>
+    <style type="text/css">
+#letras {  
+  float: none;
+}
+
+#logo {  
+  float: left;
+}
+
+#resultados {  
+  font-family: Arial, Helvetica, sans-serif;  
+  font-size: x-large;  
+  position: relative;  
+  text-align: center;
+}
+
+#textocabecera {  
+  font-family: Arial, Helvetica, sans-serif;  
+  font-size: x-large;
+}
+
+#resultado {  
+  font-weight: bold;  
+  font-size: xx-large;  
+  font-family: Arial, Helvetica, sans-serif;  
+  text-align: center;  
+  color: #040504;  
+  background-color: yellow;
+}
+
+</style></head>
+  <body id="textocuerpo">
+    <div id="cabecera">
+      <div style="text-align: center;"><img id="logo" alt="LogoUS" src="logoUS.jpg"><img
+          id="letras" style="width: 420px; height: 58px;" alt="letras" src="letras.jpg"><br>
+      </div>
+      <div id="textocabecera" style="text-align: center;"> &nbsp; &nbsp;&nbsp;
+        Salón del estudiante 2014. Sorteo electrónico de Portatil y Mochilas </div>
+    </div>
+    <p style="text-align: center;">Teclee el rango de valores</p>
+    <div style="text-align: center;">
+      <form> <label for="min">Valor minimo: </label> <input id="min" value="1"
+          maxlength="1" readonly="readonly"> <label for="max">Valor maximo: </label>
+        <input id="max" value="1" maxlength="5" required=""> <input value="Calcular"
+          onclick="aleatorio();" type="button"> </form>
+    </div>
+    <p id="resultados"> El numero premiado es : <span id="resultado"> .....</span></p>
+  </body>
+</html>

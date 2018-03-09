@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+   font-family: Arial, Helvetiva, sans-serif;
+}
+@font-face {
+font-family: 'CrimsonRoman';
+src: url('Crimson-Roman.eot');
+src: url('Crimson-Roman.eot?#iefix') format('embedded-opentype'),
+ url('Crimson-Roman.woff') format('woff'),
+ url('Crimson-Roman.ttf') format('truetype'),
+ url('Crimson-Roman.svg#CrimsonRoman') format('svg');
+ font-weight: normal;
+ font-style: normal;
+ font-variant: normal; }
+@font-face
+{
+font-family: Fira;
+src:url(FiraOpenType/FiraMono-Regular.ttf),url(FiraOpenType/FiraMono-Bold.ttf);
+ font-weight: normal;
+ font-style: normal;
+ font-variant: normal;    
+}
+.header {
+ clear: both;
+ width:100%;
+ height: 5rem;
+ background-color: #cd6723;
+ # position: fixed;
+ margin-bottom:0px;
+ margin-top:0px;
+ font-size: 1rem;
+ min-width: 50px; /*suggest a mid-width & min-height*/
+ min-height 50px;
+}
+.nav {
+clear: both;
+ width:100%;
+ height: 10rem;
+ font-size: 1rem;
+ min-width: 50px; /*suggest a mid-width & min-height*/
+ min-height: 50px;
+ margin-bottom:0px;
+ margin-top:0px;
+}
+
+
+#contenido{
+ font-family:Fira;
+}
+
+
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+
+	
+}
+table{
+	display: block;
+	border: 1px solid #666666;
+	background-color: #cbcbcb;
+	}
+a{
+	display: block;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #2c393b;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 25px;
+	border: 1px solid #666666;
+	margin-left: 60px;
+	padding: 8px;
+	background-color: #cbcbcb;
+	-webkit-box-shadow: inset 5px 5px 5px 3px rgba(100, 80, 0, 0.5);
+        
+        box-shadow: inset 5px 5px 5px 3px rgba(100, 80, 0, 0.5);
+
+}
+a:hover {
+	background-color:#00aacc;
+	color:#FFF;
+	 -webkit-box-shadow: inset 5px 5px 5px 3px rgba(100, 80, 0, 0.5);
+ box-shadow: inset 5px 5px 5px 3px rgba(100, 80, 0, 0.5);
+ -webkit-border-radius: 10px;
+    
+    border-radius: 10px;
+}
